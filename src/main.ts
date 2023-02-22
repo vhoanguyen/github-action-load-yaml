@@ -8,6 +8,7 @@ import * as path from "path";
 function run(): void {
     const dataFileName = core.getInput("json_file");
     let config = readConfigFile(dataFileName)
+    console.log(config)
     core.setOutput("Data", config);
 
 }
