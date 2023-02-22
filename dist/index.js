@@ -37,9 +37,10 @@ var fs = __importStar(__nccwpck_require__(7147));
 var path = __importStar(__nccwpck_require__(1017));
 function run() {
     var dataFileName = core.getInput("json_file");
+    console.log(dataFileName);
     var config = readConfigFile(dataFileName);
     console.log(config);
-    core.setOutput("Data", config);
+    core.setOutput("Data", "123");
 }
 function readConfigFile(filePath) {
     var fileContent = {};

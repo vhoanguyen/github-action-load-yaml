@@ -6,10 +6,11 @@ import * as path from "path";
 
 
 function run(): void {
-    const dataFileName = core.getInput("json_file");
+    const dataFileName = core.getInput("json_file")
+    console.log(dataFileName)
     let config = readConfigFile(dataFileName)
     console.log(config)
-    core.setOutput("Data", config);
+    core.setOutput("Data", "123");
 
 }
 
