@@ -21,8 +21,8 @@ function readConfigFile(filePath: string) {
     try {
       fileContent = yaml.load(fs.readFileSync(file_path, "utf8"));
     }
-    catch {
-      return fileContent
+    catch(e: any) {
+        console.log(e)
     }
     return fileContent
   }
