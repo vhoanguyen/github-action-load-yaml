@@ -1,0 +1,33 @@
+{
+  "name": "github-action-load-yaml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && ncc build lib/main.js",
+    "format": "prettier --write **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vhoanguyen/github-action-load-yaml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vhoanguyen/github-action-load-yaml/issues"
+  },
+  "homepage": "https://github.com/vhoanguyen/github-action-load-yaml#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@vercel/ncc": "^0.36.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  }
+}
