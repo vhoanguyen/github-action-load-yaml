@@ -15,8 +15,10 @@ function run(): void {
 
 function readConfigFile(filePath: string) {
     let fileContent = {}
+    let file_path = path.resolve(filePath)
+    console.log(file_path)
     try {
-      fileContent = yaml.load(fs.readFileSync(path.resolve(filePath), "utf8"));
+      fileContent = yaml.load(fs.readFileSync(file_path, "utf8"));
     }
     catch {
       return fileContent
