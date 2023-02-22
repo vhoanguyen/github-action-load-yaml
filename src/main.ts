@@ -10,7 +10,7 @@ function run(): void {
     console.log(dataFileName)
     let config = readConfigFile(dataFileName)
     console.log(config)
-    core.setOutput("Data", "123");
+    core.setOutput("Data", config);
 
 }
 

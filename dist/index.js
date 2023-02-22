@@ -40,7 +40,7 @@ function run() {
     console.log(dataFileName);
     var config = readConfigFile(dataFileName);
     console.log(config);
-    core.setOutput("Data", "123");
+    core.setOutput("Data", config);
 }
 function readConfigFile(filePath) {
     var fileContent = {};
